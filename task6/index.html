@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box box-1">
+        <h1>example 1</h1>
+        <button class="btn-1">submit</button>
+    </div>
+    <div class="container">
+        <button class="reveal-btn">Reveal more</button>
+        <div class="hidden-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In blanditiis maiores reprehenderit, fugiat
+                illo ipsa aliquid atque recusandae delectus nihil facilis, explicabo pariatur similique id voluptate
+                veritatis quasi numquam autem!</p>
+        </div>
+    </div>
+    <script>
+        /*   const newBgColor= document.querySelector(".box-1");
+        function changeBgColor(){
+            newBgColor.style.backgroundColor = 'blue';
+        
+        };
+        newBgColor.addEventListener("mouseover",changeBgColor);
+        */
+
+const hiddenContent = document.querySelector(".hidden-content");
+const revealBtn = document.querySelector(".reveal-btn");
+
+function revealContent(){
+    if(hiddenContent.classList.contains("reveal-btn")){
+        hiddenContent.classList.remove("reveal-btn")
+    }
+    else{
+       hiddenContent.classList.add("reveal-btn")
+    }
+}
+revealBtn.addEventListener("click",revealContent);
+
+    </script>
+</body>
+</html>

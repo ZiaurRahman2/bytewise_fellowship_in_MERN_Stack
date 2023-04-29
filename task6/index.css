@@ -1,0 +1,13 @@
+.box-1{
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    background-color: aqua;
+    border-radius: 3px;
+}
+.hidden-content{
+    display: none;
+}
+.hidden-content.reveal-btn{
+    display: block;
+}
