@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //callBack function
+        /*
+       document.write("1");
+       document.write('<br>');
+       document.write("2");
+       document.write('<br>');
+       setTimeout(()=>{
+           document.write("4");
+       },3000)
+       //document.write("3");
+       */
+        stock = {
+            fruit: ['banana', 'apple', 'pine apple', 'mango', 'strawberry']
+        }
+        function order(fruit_name, call_production) {
+            setTimeout(() => {
+                document.write(`${stock.fruit[fruit_name]} was selected`);
+
+                document.write('<br>');
+
+                setTimeout(() => {
+                    document.write(`${stock.fruit[fruit_name]} was selected`);
+                    document.write('<br>');
+
+                    setTimeout(() => {
+                        document.write(`${stock.fruit[fruit_name]} was selected`);
+                        document.write('<br>');
+
+                        setTimeout(() => {
+                            document.write(`${stock.fruit[fruit_name]} was selected`);
+                            document.write('<br>');
+
+                            setTimeout(() => {
+                                document.write(`${stock.fruit[fruit_name]} was selected`);
+                                document.write('<br>');
+
+                            }, 1000); setTimeout(() => {
+                                document.write(`${stock.fruit[fruit_name]} was selected`);
+                                document.write('<br>');
+
+                            }, 1000);
+                        }, 2000);
+                    }, 3000);
+                }, 4000);
+            }, 5000); 
+            call_production();
+        }
+
+        function production() {
+
+        }
+        order(2, production)
+    </script>
+</body>
+
+</html>

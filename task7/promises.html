@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let is_shop_open=true;
+let order = (time,work)=>{
+    return new promise((resolve,reject)=>{
+        if(is_shop_open){
+            setTimeout(()=>{
+                resolve(work()) 
+            },1000)
+           
+        }
+        else{
+            reject(console.log("our shop is close , sorry for inconvinence"))
+        }
+    })
+}
+
+
+    </script>
+</body>
+</html>
